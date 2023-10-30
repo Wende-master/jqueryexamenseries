@@ -89,6 +89,16 @@
                 var imagen = $("#imagen").val();
                 console.log(imagen);
 
+
+                if (!nombre || !imagen || !idSerie) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Por favor, complete todos los campos.',
+                    });
+                    return null;
+                }
+                
                 var personaje = new Object();
 
                 personaje.idSerie = idSerie;
