@@ -1,0 +1,44 @@
+.personajes-container {
+    background: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .overlay {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .personajes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .personaje-card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 15px;
+    border: 3px solid #8ebae6;
+    border-radius: 15px;
+    text-align: center;
+  }
+ 
+  .personaje-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .personaje-card {
+      width: calc(50% - 20px);
+    }
+  }
